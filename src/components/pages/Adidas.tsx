@@ -12,7 +12,7 @@ export type AdidasItem= {
 }
 export const adidasArr:AdidasItem[] = [
     {
-        id: '0',
+        id: '1',
         model: 'ADIDAS ADIFOM TRXN',
         collection: 'new collection1',
         price: '100200$',
@@ -20,14 +20,14 @@ export const adidasArr:AdidasItem[] = [
 
     },
     {
-        id: '1',
+        id: '2',
         model: 'ADIDAS ADIFOM SUPER',
         collection: 'new collection22',
         price: '200300$',
         picture: adidasModel2
     },
     {
-        id: '2',
+        id: '3',
         model: 'ADIDAS SUPER SUPERSKI',
         collection: 'new collection333',
         price: '300400$',
@@ -36,11 +36,9 @@ export const adidasArr:AdidasItem[] = [
 ]
 
 export const Adidas = () => {
-
-
     return (
-        <div>
-           <h2> ADIDAS</h2>
+        <div style={{padding: '20px'}}>
+           <h2>ADIDAS</h2>
             <div style={{display: 'flex', justifyContent: 'centre'}}>
                 {adidasArr.map((item) =>
                 <Link to={`/adidas/${item.id}`} key={item.id}>

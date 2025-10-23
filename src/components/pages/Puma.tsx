@@ -1,6 +1,6 @@
 export const Puma = () => {
     return (
-        <div>
+        <div style={{padding: '20px'}}>
             <h2>PUMA</h2>
             <p>
                 What is Lorem Ipsum?

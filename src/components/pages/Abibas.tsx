@@ -1,6 +1,6 @@
 export const Abibas = () => {
     return (
-        <div>
+        <div style={{padding: '20px'}}>
             <h2> ABIBAS</h2>
             <p>
                 What is Lorem Ipsum?
