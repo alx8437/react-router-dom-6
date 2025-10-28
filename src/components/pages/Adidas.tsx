@@ -3,14 +3,14 @@ import adidasModel2 from '../../assets/PostMove_Mid_Cloudfoam_Super_Lifestyle_Ba
 import adidasModel3 from '../../assets/Superstar_XLG_Shoes_Black_IG9777_01_standard.webp'
 import {Link} from "react-router-dom";
 
-export type AdidasItem= {
+export type ProductItem = {
     id: string;
     model: string;
     collection: string;
     price: string;
     picture: string;
 }
-export const adidasArr:AdidasItem[] = [
+export const adidasArr: ProductItem[] = [
     {
         id: '1',
         model: 'ADIDAS ADIFOM TRXN',

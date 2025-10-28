@@ -1,10 +1,26 @@
 import {adidasArr} from "./Adidas.tsx";
 import {useParams} from "react-router-dom";
+import {pumaArr} from "./Puma.tsx";
+
+const brandArrays = {
+    adidas: adidasArr,
+    puma: pumaArr,
+};
 
 const Model = () => {
-    const {id} = useParams();
+    const {id, brand} = useParams();
 
-    const item = adidasArr.find(item => item.id === id)
+    const currentBrandArray = brandArrays[brand as keyof typeof brandArrays]
+
+    if (!currentBrandArray) {
+        return (
+            <div style={{ padding: "20px", textAlign: "center" }}>
+                Бренд не найден
+            </div>
+        );
+    }
+
+    const item = currentBrandArray.find(item => item.id === id)
 
     if (!item) {
         return <div
